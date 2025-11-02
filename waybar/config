@@ -1,0 +1,62 @@
+{
+    "layer": "top",
+	"position": "top",
+    "modules-left": ["custom/nathan", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "battery"],
+	"hyprland/workspaces": {
+    	"format": "{icon}",
+    	"format-icons": {
+        	"default": "󰍹",
+        	"active": "󱎴",
+        	"urgent": ""
+    	},
+    	"all-outputs": true 
+	},
+	"custom/nathan": {
+		"format": "Nathan - "
+	},
+    "battery": {
+		"interval": 2,
+        "format": "{capacity}% {icon}",
+        "format-icons": { 
+			"discharging": [" ", " ", " ", " ", " "],
+			"charging": [" 󱐋", " 󱐋", " 󱐋", " 󱐋", " 󱐋"],
+		},
+		"states": {
+			"warning": 30,
+			"critical": 20
+		}
+    },
+	"network": {
+    	"format": "{ifname}",
+    	"format-wifi": "{essid}   ",
+    	"format-ethernet": " {ifname}",
+    	"format-disconnected": " Disconnected",
+    	"tooltip-format": "{ifname} {ipaddr}/{cidr}",
+    	"tooltip-format-wifi": "SSID: {essid}\nSignal: {signalStrength}%",
+    	"tooltip-format-ethernet": "{ifname}",
+    	"tooltip-format-disconnected": "No connection",
+    	"max-length": 50
+ 	},
+    "clock": {
+        "format": "{:%d - %H:%M}",
+		"format-alt": "{:%Y-%m-%d - %H:%M}",
+		"tooltip": true,
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
+    }
+}

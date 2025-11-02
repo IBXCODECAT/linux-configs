@@ -1,0 +1,17 @@
+# Ignore Everything
+*
+
+# Unignore This File
+!.gitignore
+
+# Except for the hyprland configuration
+!/hypr/
+!/hypr/**
+
+# Except for the NVIM configuration
+!/nvim/
+!/nvim/**
+
+# Except for Waybar configuration
+!/waybar/
+!/waybar/**
