@@ -15,3 +15,7 @@
 # Except for Waybar configuration
 !/waybar/
 !/waybar/**
+
+# Except for BTOP status screen
+!/btop/
+!/btop/**
