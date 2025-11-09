@@ -1,7 +1,7 @@
 {
     "layer": "top",
 	"position": "top",
-    "modules-left": ["clock", "custom/nathan"],
+    "modules-left": ["clock", "custom/nathan", "volume"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["network", "battery"],
 	"hyprland/workspaces": {

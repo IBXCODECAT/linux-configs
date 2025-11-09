@@ -17,6 +17,7 @@ local servers = {
 	'lua_ls',
 	'ts_ls',
 	'pyright',
+	'rust_analyzer'
 }
 
 mason_lspconfig.setup({

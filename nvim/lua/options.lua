@@ -12,16 +12,22 @@ vim.opt.wrap = false			-- No Line Wrapping (Gross)
 
 -- DIAGNOSTICS (diagnostic messages are fed into nvim by an LSP) --
 vim.diagnostic.config({
-	virtual_text = true,
+	virtual_text = {
+		severity = {
+			min = vim.diagnostic.severity.WARN
+		}
+	},
 
 	signs = {
+		severity = { min = vim.diagnostic.severity.WARN },
 		text = {
-			[vim.diagnostic.severity.ERROR] = '🕱',
-			[vim.diagnostic.severity.WARN] = '⚠',
 			[vim.diagnostic.severity.INFO] = '🛈',
-			[vim.diagnostic.severity.HINT] = '⦒',
+			[vim.diagnostic.severity.WARN] = '⚠',
+			[vim.diagnostic.severity.ERROR] = '🕱',
 		}
-	}
+	},
+
+	underline = { severity = { min = vim.diagnostic.severity.WARN } },
 })
 
 -- SEARCH --
