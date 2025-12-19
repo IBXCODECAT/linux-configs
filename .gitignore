@@ -19,3 +19,11 @@
 # Except for BTOP status screen
 !/btop/
 !/btop/**
+
+# Except for zellij configuration
+!/zellij/
+!/zellij/**
+
+# Except for Cosmic Wayland Compositor
+!/cosmic/
+!/cosmic/**
