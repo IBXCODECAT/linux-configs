@@ -27,3 +27,7 @@
 # Except for Cosmic Wayland Compositor
 !/cosmic/
 !/cosmic/**
+
+# Except for the Foot Terminal Emulator
+!/foot/
+!/foot/**

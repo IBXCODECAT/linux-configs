@@ -2,21 +2,8 @@
     "layer": "top",
 	"position": "top",
     "modules-left": ["clock", "custom/nathan", "volume"],
-    "modules-center": ["hyprland/workspaces"],
+	"modules-center": ["cpu", "memory"],
     "modules-right": ["network", "battery"],
-	"hyprland/workspaces": {
-    	"format": "{icon}",
-    	"format-icons": {
-			"1": "󰡴",
-			"2": "",
-			"3": "",
-			"4": "",
-			"5": "",
-        	"default": "󰍹",
-        	"urgent": ""
-    	},
-    	"all-outputs": true 
-	},
 	"custom/nathan": {
 		"format": " --- Nathan"
 	},
@@ -62,5 +49,15 @@
                 "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
             }
         }
-    }
+    },
+	"cpu": {
+    	"interval": 2,
+    	"format": "CPU: {usage}% - ",
+    	"tooltip": false
+	},
+	"memory": {
+    	"interval": 5,
+    	"format": "MEM: {percentage}%",
+    	"tooltip": false
+	}
 }
