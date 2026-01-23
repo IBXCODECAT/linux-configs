@@ -31,3 +31,7 @@
 # Except for the Foot Terminal Emulator
 !/foot/
 !/foot/**
+
+# Except for the Helix Text Editor
+!/helix/
+!/helix/**
