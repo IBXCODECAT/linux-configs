@@ -4,6 +4,10 @@
 # Unignore This File
 !.gitignore
 
+# Except for any custom scripts
+!/SCRIPTS/
+!/SCRIPTS/**
+
 # Except for the hyprland configuration
 !/hypr/
 !/hypr/**
