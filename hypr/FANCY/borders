@@ -1,0 +1,11 @@
+general {
+    gaps_in = 8
+    gaps_out = 20
+    border_size = 4
+    
+    col.active_border = rgb(ff00dc) rgb(00f2ff) 45deg
+    col.inactive_border = rgba(1a1a1aaa)
+
+    # Make windows "snap" into place like a grid
+    layout = dwindle
+}
